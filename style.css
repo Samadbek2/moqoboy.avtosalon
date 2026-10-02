@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #989899;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0b0b0f;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+
+/* HEADER BOG'LANISH */
+
+.header-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-btn:hover {
+    background: #ff4b58;
+    transform: translateY(-2px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.9),
+            rgba(0,0,0,.45)
+        ),
+        url("https://images.unsplash.com/photo-1504215680853-026ed2a45def")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #e63946;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+
+/* ASOSIY TUGMA */
+
+.main-btn {
+    background: #e63946;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.main-btn:hover {
+    background: #ff4b58;
+    transform: translateY(-2px);
+}
+
+
+/* BIZ BILAN BOG'LANISH */
+
+.second-btn {
+    color: white;
+    border: 1px solid #555;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.second-btn:hover {
+    background: white;
+    color: #111;
+}
+
+
+/* ================= AVTOMOBILLAR ================= */
+
+.cars-section {
+    padding: 100px 7%;
+    background: #989899;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #e63946;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.cars-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* KARTOCHKA */
+
+.car-card {
+    background: #15151b;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+}
+
+
+/* RASM */
+
+.car-image {
+    height: 230px;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.car-card:hover .car-image img {
+    transform: scale(1.06);
+}
+
+
+/* MA'LUMOT */
+
+.car-info {
+    padding: 25px;
+}
+
+.car-info h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.car-info p {
+    color: #999;
+    font-size: 15px;
+}
+
+
+/* NARX + BATAFSIL */
+
+.car-bottom {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-bottom strong {
+    font-size: 22px;
+    color: #e63946;
+}
+
+
+/* BATAFSIL LINK */
+
+.detail-btn {
+    background: transparent;
+    color: white;
+
+    border: 1px solid #555;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    transition: .3s;
+}
+
+.detail-btn:hover {
+    background: #e63946;
+    border-color: #e63946;
+    color: white;
+}
+
+
+/* IKKINCHI AVTOMOBIL BO'LIMI */
+
+.more-cars {
+    background: #15151b;
+}
+
+.more-cars .car-card {
+    background: #202027;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 100px 7%;
+    background: #0f0f14;
+    text-align: center;
+}
+
+.about div {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 100px 7%;
+    background: #989899;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    background: #15151b;
+    border: 1px solid #333;
+    color: white;
+    padding: 17px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #e63946;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+form button:hover {
+    background: #ff4b58;
+    transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #050507;
+    color: #777;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .cars-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+}
+
+
+/* ================= TELEFON ================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cars-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .cars-section,
+    .about,
+    .contact {
+        padding: 70px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .about h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* ================= KICHIK TELEFON ================= */
+
+@media (max-width: 500px) {
+
+    header {
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .main-btn,
+    .second-btn {
+        text-align: center;
+    }
+
+    .car-image {
+        height: 210px;
+    }
+
+    .car-info h3 {
+        font-size: 20px;
+    }
+}
